@@ -47,7 +47,7 @@ def get_yellow():
 
 
 def npy2feat(npy):
-    feats = o3d.registration.Feature()
+    feats = o3d.pipelines.registration.Feature()
     feats.data = npy.T
     return feats
 
